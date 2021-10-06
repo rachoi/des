@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Studio 0</title>
+</head>
+
+<!-- Known issues: When using dev tools, it sometimes does not center properly for some reason
+despite being able to center perfectly fine when resizing the browser window. I've looked
+into how I was using flexbox and it looked fine, so not really sure.
+ -->
+
+<body>
+    <div class="page">
+        <header class="flex-container" id="banner">
+            <section id="banner-content">
+                <!-- background gradient w/ animation -->
+            </section>
+            <!-- HTML validator said I can't use a footer for this -->
+            <div class="header-footer">
+                <h1 id="name"> Raymond Choi </h1>
+                <h2> DES 157A - Interactive Media II - Fall 2021</h2>
+            </div>
+        </header>
+
+        <main class="flex-container">
+
+            <section id="list" class="flex-container">
+                <div class="flex-container-list">
+                    <h3 class="list-heading"> Studios </h3>
+                    <ul>
+                        <li>
+                            <a href="">Mad Libs 2.0</a>
+                        </li>
+                        <li>
+                            <a href="">Every Picture</a>
+                        </li>
+                        <li>
+                            <a href="">Game On!</a>
+                        </li>
+                    </ul>
+                    <h3 class="list-heading"> Experiments </h3>
+                    <ul>
+                        <li>
+                            <a href="">Ex1</a>
+                        </li>
+                        <li>
+                            <a href="">Ex2</a>
+                        </li>
+
+                    </ul>
+                    <h3 class="list-heading"> Writing </h3>
+                    <ul>
+                        <li>
+                            <a href="">Learning Journal</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="flex-container-list">
+                    <h3 class="list-heading"> r&d </h3>
+                    <ul>
+                        <li>
+                            <a href="">Project Brief</a>
+                        </li>
+                        <li>
+                            <a href="">Digital Comp</a>
+                        </li>
+                        <li>
+                            <a href="">Refined Comp</a>
+                        </li>
+                        <li>
+                            <a href="">Prototype 1</a>
+                        </li>
+                        <li>
+                            <a href="">User Test</a>
+                        </li>
+                        <li>
+                            <a href="">User Test Results</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-container-list">
+                    <h3 class="list-heading"> Final </h3>
+                    <ul>
+                        <li>
+                            <a href="">Final project</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer class="flex-container-footer">
+                <a href="https://validator.w3.org/check?uri=https://rachoi.github.io/" class="footer-a">HTML</a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" class="footer-a">CSS</a>
+                <a href="mailto:&#114;&#099;&#104;&#111;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" class="footer-a">Email</a>
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>
