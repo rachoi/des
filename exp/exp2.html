@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Experiment 2</h1>
+    <ul class="res">
+
+    </ul>>
+    <!-- FizzBuzz -->
+    <script>
+        /*
+                    Prompts user for an input, if invalid input, ask again
+                */
+
+        let input = prompt("Enter the amount of numbers you want to check for fizzbuzz");
+        while (isNaN(input) || input.length == 0) {
+            input = prompt("Error: did not enter a valid number, please try again");
+        }
+
+
+        /*
+            Input funneled into a function that conducts fizzbuzz and pushes elements into an array
+        */
+        let arr = [];
+        const fizzBuzz = (n) => {
+            for (let i = 1; i <= n; i++) {
+                if (i < 3) {
+                    // console.log(i);
+                    arr.push(i);
+                } else if (i % 3 == 0 && i % 5 == 0) {
+                    // console.log("FizzBuzz \n");
+                    arr.push("FizzBuzz");
+                } else if (i % 3 == 0) {
+                    // console.log("Fizz \n");
+                    arr.push("Fizz");
+                } else if (i % 5 == 0) {
+                    arr.push("Buzz");
+                    // console.log("Buzz \n");
+                } else {
+                    // console.log(i + '\n');
+                    arr.push(i);
+                }
+
+            }
+        }
+        fizzBuzz(input);
+
+        /*
+            Array elements are then used to create HTML list elements
+        */
+        const displayResults = (arr) => {
+            let list = document.querySelector("ul");
+
+            for (let i = 0; i < arr.length; i++) {
+                let listElement = document.createElement("li");
+                let node = document.createTextNode(arr[i]);
+                listElement.appendChild(node);
+                list.appendChild(listElement);
+            }
+
+        }
+
+        displayResults(arr);
+
+        /*
+            Style the values that output FizzBuzz, Fizz, Buzz
+        */
+
+        const colorFizzBuzz = () => {
+            let elements = document.querySelectorAll("li");
+
+            // console.log(elements);
+
+            for (let i = 0; i < elements.length; i++) {
+                if (elements[i].innerHTML == "FizzBuzz") {
+                    elements[i].style.color = "blue";
+                } else if (elements[i].innerHTML == "Buzz") {
+                    elements[i].style.color = "green";
+                } else if (elements[i].innerHTML == "Fizz") {
+                    elements[i].style.color = "orange";
+                }
+            }
+        }
+
+        colorFizzBuzz();
+    </script>
+</body>
+
+</html>
