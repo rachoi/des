@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Learning Journal</title>
+</head>
+<header>
+
+</header>
+<body>
+    <div class="page">
+        <header class="flex-container"> 
+            <h1> Learning Journal </h1>
+        </header>
+
+        <main class="flex-container">
+            <!-- Setting up for multiple entries -->
+            <section class="flex-content" id="learning">
+                <div class="flex-container-content">
+                    <h1 class="statement-header"> Forms </h1>
+
+                    <div class="statement"> 
+                        <p> The article mentioned a lot of different good practices people should follow when creating a form design for their website. It talked a lot about visual cues that help the user when they are filling out the form.</p>
+                    </div>
+
+                    <div class="statement"> 
+                        <p> The first thing it mentions is to have the input fields on one column and to not have too many input fields, but if unavoidable, use multi-step forms.</p>
+                    </div>
+
+                    <div class="statement"> 
+                        <p> It also mentions that it is good practice to label what the input is supposed to be, and provide some examples to what it should be outside of the input field.</p>
+                    </div>
+
+                    <div class="statement" id="footer"> 
+                        <p> The gist of the article was to make it so we provide the user with visuals that help them figure out what to do/whether things were successful, etc.</p>
+                    </div>
+                </div>
+                <div class="flex-container-content">
+                    <h1 class="statement-header" id="example-form"> Example form </h1>
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" required><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" required><br>
+                        <label for="phone"> Phone number (optional) </label> <br>
+                        <input type="text" id="phone" name="phone"><br>
+                        <label for="email"> Email </label> <br>
+                        <input type="text" id="email" name="email" required><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                    
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+    
+</body>
+</html>
