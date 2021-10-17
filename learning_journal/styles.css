@@ -73,3 +73,34 @@ input {
 #footer {
     margin-bottom: 15px;
 }
+
+
+.flex-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(138, 138, 138);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px 20px;
+    width: 600px;
+}
+
+.flex-container-footer a {
+    margin: 10px 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.flex-container-footer a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    transition: all 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
