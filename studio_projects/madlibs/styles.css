@@ -7,6 +7,16 @@ body {
     justify-content: center;
 }
 
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
 header {
     margin-bottom: 20px;
 }
@@ -14,7 +24,8 @@ header {
 p {
     margin: 0;
 }
-h1, 
+
+h1,
 h2,
 h3 {
     font-family: 'Roboto', sans-serif;
@@ -30,15 +41,15 @@ h3 {
     margin-bottom: 50px;
 }
 
-.M1 { 
+.M1 {
     transform: translate(0px, 22px) rotate(-33deg);
 }
 
-.e1{
+.e1 {
     transform: translate(0px, 15px) rotate(-20deg);
 }
 
-.o1{
+.o1 {
     transform: translate(0px, 10px) rotate(-20deg);
 }
 
@@ -52,7 +63,7 @@ h3 {
 
 .l1 {
     transform: translate(0px, 5px) rotate(15deg);
-} 
+}
 
 .i1 {
     transform: translate(0px, 10px) rotate(20deg);
@@ -72,7 +83,31 @@ span {
     font-size: 20px;
 }
 
-header { 
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#madlib {
+    box-sizing: border-box;
+    background-color: #fff1e6;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
     margin: 50px 0px;
 }
 
@@ -81,7 +116,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
     width: 100%;
     height: 100%;
 }
@@ -92,11 +126,10 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #fff1e6;
-    flex-direction: row;;
+    flex-direction: row;
+    ;
     border-radius: 3px;
     height: 100%;
-
-    
 }
 
 .flex-container-content {
@@ -109,7 +142,6 @@ header {
     margin: 50px 50px;
 }
 
-
 .statement-header {
     margin: 70px 0px;
 }
@@ -117,7 +149,6 @@ header {
 #example-form {
     margin-bottom: 20px;
 }
-
 
 .statement {
     margin: 5px 25px;
@@ -136,12 +167,9 @@ input:focus {
     outline: none;
 }
 
-
-
 #footer {
     margin-bottom: 15px;
 }
-
 
 .flex-container-footer {
     display: flex;

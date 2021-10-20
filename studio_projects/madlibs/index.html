@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script> 
+    <script src="script.js" defer></script>
     <title>Madlibs</title>
 </head>
+
 <body>
     <div class="page">
         <main class="flex-container">
-            <!-- Setting up for multiple entries -->
-            <section class="flex-content">
+
+            <section class="flex-content" id="normal">
                 <div class="flex-container-content">
-                    <header class="arc"> 
+                    <header class="arc">
                         <span class="M1">
                             M
                         </span>
@@ -47,7 +49,7 @@
                         </span>
                     </header>
 
-                    <div class="statement"> 
+                    <div id="image">
                         <p>Insert image + animation here</p>
                     </div>
                 </div>
@@ -63,15 +65,25 @@
                         <label for="n2">Enter another noun: </label><br>
                         <input type="text" id="n2" name="n2" required><br>
                         <label for="phone"> Enter an adjective: </label> <br>
-                        <input type="adj" id="adj" name="adj"><br>
-                        <label for="verb"> Enter a verb: </label> <br>
-                        <input type="text" id="verb" name="verb" required><br>
+                        <input type="text" id="adj" name="adj"><br>
+                        <label for="verb1"> Enter a verb: </label> <br>
+                        <input type="text" id="verb1" name="verb1" required><br>
+                        <label for="object"> Enter a object: </label> <br>
+                        <input type="text" id="object" name="object" required><br>
                         <input type="submit" value="Submit">
                     </form>
-                    
+
 
                 </div>
+
             </section>
+
+            <section class="flex-content hidden" id="overlay">
+                <div class="flex-container-content">
+                    <p id="madlib"> </p>
+                </div>
+            </section>
+
 
             <footer class="flex-container-footer">
                 <a href="https://validator.w3.org/check?uri=https://rachoi.github.io/des/learning_journal/index.html" class="footer-a">HTML</a>
@@ -80,8 +92,9 @@
             </footer>
         </main>
 
-       
+
     </div>
-    
+
 </body>
+
 </html>
