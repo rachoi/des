@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    background-color: #eae4e9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
+h1, 
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    margin: auto;
+    height: 768px;
+    width: 1366px;
+}
+
+#arc {
+    margin-bottom: 50px;
+}
+
+.M1 { 
+    transform: translate(0px, 22px) rotate(-33deg);
+}
+
+.e1{
+    transform: translate(0px, 15px) rotate(-20deg);
+}
+
+.o1{
+    transform: translate(0px, 10px) rotate(-20deg);
+}
+
+.w1 {
+    transform: translate(0px, 5px) rotate(-10deg);
+}
+
+.dash {
+    transform: translate(0px, 5px) rotate(10deg);
+}
+
+.l1 {
+    transform: translate(0px, 5px) rotate(15deg);
+} 
+
+.i1 {
+    transform: translate(0px, 10px) rotate(20deg);
+}
+
+.b1 {
+    transform: translate(0px, 15px) rotate(20deg);
+}
+
+.s1 {
+    transform: translate(0px, 22px) rotate(33deg);
+}
+
+span {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+header { 
+    margin: 50px 0px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.flex-content {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff1e6;
+    flex-direction: row;;
+    border-radius: 3px;
+    height: 100%;
+
+    
+}
+
+.flex-container-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin: 50px 50px;
+}
+
+
+.statement-header {
+    margin: 70px 0px;
+}
+
+#example-form {
+    margin-bottom: 20px;
+}
+
+
+.statement {
+    margin: 5px 25px;
+    max-width: 450px;
+}
+
+input {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 0px;
+    height: 20px;
+    /* border-bottom: solid 2px black; */
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+#footer {
+    margin-bottom: 15px;
+}
+
+
+.flex-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(138, 138, 138);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px 20px;
+    width: 600px;
+}
+
+.flex-container-footer a {
+    margin: 10px 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.flex-container-footer a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    transition: all 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
