@@ -34,17 +34,23 @@ h3 {
 }
 
 .flex-content {
+    width: 50%;
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    /* width: 100%; */
+
     flex-direction: row;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: #fff1e6;
 }
 
 .flex-container-content {
     width: 50%;
     height: 100%;
     display: flex;
-     align-items: center;
+    align-items: center;
     flex-direction: column;
     margin: 0 10px;
 }
@@ -67,8 +73,7 @@ input {
 }
 
 #learning {
-    background-color: #fff1e6;
-    border-radius: 3px;
+   
 }
 
 #footer {
