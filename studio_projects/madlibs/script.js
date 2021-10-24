@@ -33,7 +33,7 @@
             `
             Hey ${words[0]}!
 
-            So I heard you like ${words[1]}? Well I think the bongos are better! You also like the ${words[2]}? 
+            So I heard you like the ${words[1]}? Well I think the bongos are better! You also like the ${words[2]}? 
             Well the keyboard is also better than that! I also heard your favorite song was ${words[3]} by ${words[4]}. I bet I could make it sound better
             on the bongos. 
             `;
