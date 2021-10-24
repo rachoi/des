@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    background-color: #eae4e9;
+    /* background-color: #9fa1a3; */
+    background-color: #ffffff;
+    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -79,8 +81,46 @@ h3 {
 
 span {
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Modak', cursive; */
+    font-size: 70px;
+}
+
+#m {
+    color: #fad2e1;
+}
+
+#e {
+    color: #bee1e6;
+}
+
+#o { 
+    color: #fff1e6;
+}
+
+#w {
+    color: #fad2e1;
+}
+
+#dasht {
+    color: #bee1e6;
+}
+
+#l {
+    color: #fff1e6;
+}
+
+#i {
+    color: #bee1e6;
+}
+
+#b {
+    color: #fff1e6;
+}
+
+#s{
+    color: #fad2e1;
 }
 
 #overlay {
@@ -95,7 +135,24 @@ span {
     transition-timing-function: ease;
 }
 
-#madlib {
+.exit-btn {
+    display: absolute;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.x {
+    font-size: 20px;
+}
+
+.x:hover {
+    cursor: pointer;
+}
+.img-div {
+    border-radius: 10px;
+}
+
+#madlib-div{
     box-sizing: border-box;
     background-color: #fff1e6;
     padding: 20px;
@@ -105,6 +162,10 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#madlib {
+    max-width: 400px;
 }
 
 header {
@@ -118,6 +179,7 @@ header {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    /* background-color: #92a8be; */
 }
 
 .flex-content {
@@ -125,9 +187,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff1e6;
+    background-color: rgb(230, 186, 137);
+    
+    /* background-color: #92a8be; */
     flex-direction: row;
-    ;
     border-radius: 3px;
     height: 100%;
 }
@@ -142,12 +205,25 @@ header {
     margin: 50px 50px;
 }
 
-.statement-header {
+.statement-header { 
     margin: 70px 0px;
+    font-family: 'Caveat', cursive;
+    font-size: 33px;
+    text-align: center;
+    color:rgba(146, 107, 207, 0.884)
 }
 
 #example-form {
     margin-bottom: 20px;
+}
+
+#submit-btn {
+    margin-left: 75px;
+    max-width: 70px;
+}
+
+.submit:hover {
+    cursor: pointer;
 }
 
 .statement {
@@ -160,6 +236,7 @@ input {
     border: none;
     border-radius: 0px;
     height: 20px;
+    width: 210px;
     /* border-bottom: solid 2px black; */
 }
 
@@ -175,7 +252,7 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(138, 138, 138);
+    background-color: #92a8be;
     border: 1px solid rgb(255, 255, 255);
     margin: 20px 20px;
     width: 600px;

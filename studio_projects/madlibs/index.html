@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Modak&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Madlibs</title>
 </head>
@@ -20,57 +23,61 @@
             <section class="flex-content" id="normal">
                 <div class="flex-container-content">
                     <header class="arc">
-                        <span class="M1">
+                        <span class="M1" id="m">
                             M
                         </span>
-                        <span class="e1">
+                        <span class="e1" id="e">
                             e
                         </span>
-                        <span class="o1">
+                        <span class="o1" id="o">
                             o
                         </span>
-                        <span class="w1">
+                        <span class="w1" id="w">
                             w
                         </span>
-                        <span class="dash">
+                        <span class="dash" id="dasht">
                             -
                         </span>
-                        <span class="l1">
+                        <span class="l1" id="l">
                             L
                         </span>
-                        <span class="i1">
+                        <span class="i1" id="i">
                             i
                         </span>
-                        <span class="b1">
+                        <span class="b1" id="b">
                             b
                         </span>
-                        <span class="s1">
+                        <span class="s1" id="s">
                             s
                         </span>
                     </header>
 
-                    <div id="image">
-                        <p>Insert image + animation here</p>
+                    <div id="image" >
+                        <img class="img-div" src="bongo.png">
                     </div>
                 </div>
 
 
                 <div class="flex-container-content">
-                    <header class="statement-header" id="example-form"> Give your response here! </header>
+                    <header class="statement-header" id="example-form"> Give your response to bongocat and they'll give you a secret!</header>
 
-                    <label> Remember to give a word for every section! </label> <br>
+                    <label style="font-family: 'Caveat', cursive; font-size: 25px; color:rgba(146, 107, 207, 0.884);"> Remember to give a word for every section! </label> <br>
                     <form>
-                        <label for="n1">Enter a noun: </label><br>
-                        <input type="text" id="n1" name="n1" required><br>
-                        <label for="n2">Enter another noun: </label><br>
-                        <input type="text" id="n2" name="n2" required><br>
-                        <label for="phone"> Enter an adjective: </label> <br>
-                        <input type="text" id="adj" name="adj"><br>
-                        <label for="verb1"> Enter a verb: </label> <br>
-                        <input type="text" id="verb1" name="verb1" required><br>
-                        <label for="object"> Enter a object: </label> <br>
-                        <input type="text" id="object" name="object" required><br>
-                        <input type="submit" value="Submit">
+
+                        <label for="name"> What is your first name? </label> <br>
+                        <input type="text" id="name" name="name"><br>
+
+                        <label for="instr1">What is your favorite instrument? </label><br>
+                        <input type="text" id="instr1" name="instr1" required><br>
+                        <label for="instr2"> What is your second favorite instrument?</label><br>
+                        <input type="text" id="instr2" name="instr2" required><br>
+
+                        <label for="song"> What is your favorite song? </label> <br>
+                        <input type="text" id="song" name="song" required><br>
+
+                        <label for="artist"> Who is the song by? </label> <br>
+                        <input type="text" id="artist" name="artist" required><br>
+                        <input id="submit-btn" class="submit" type="submit" value="Submit">
                     </form>
 
 
@@ -80,7 +87,16 @@
 
             <section class="flex-content hidden" id="overlay">
                 <div class="flex-container-content">
-                    <p id="madlib"> </p>
+                    <div id="madlib-div"> 
+                        <header class="exit-btn">
+                            <h1 id="exit" class="x"> X </h1>
+                        </header>
+                        <div class="flex-container"> 
+                            <p id="madlib"> </p>
+                            <img style="margin: auto;" class="img-div" src="evil-bongo.png">
+                            
+                        </div>
+                    </div>
                 </div>
             </section>
 
