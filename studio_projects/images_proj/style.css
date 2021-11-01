@@ -24,6 +24,30 @@ body {
     /* background-color: #92a8be; */
 }
 
+.flex-entry {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(141, 128, 114);
+    /* background-color: #92a8be; */
+    flex-direction: row;
+    height: 100%;
+}
+
+.img-container {
+    width: 50%;
+}
+
+.text-container {
+    width: 50%;
+}
+
+p {
+    max-width: 50%;
+    margin: auto;
+}
+
 .flex-container-footer {
     display: flex;
     justify-content: center;
