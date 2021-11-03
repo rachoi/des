@@ -6,13 +6,91 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding-top: 200px;
 }
 
 .page {
     margin: auto;
     height: 768px;
     width: 1366px;
+    padding: 20px;
 }
+
+
+/* Nav bar styling */
+
+
+/* 
+progress {
+    position: absolute;
+    width: 75%;
+    margin-top: 11px;
+} */
+
+header {
+    background: rgba(217, 217, 217, 0.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 160px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+header nav {
+    width: 95%;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    width: 10%;
+    box-sizing: border-box;
+    /* border-left: 2px solid rgb(255, 255, 255); */
+    /* margin: 0 60px; */
+}
+
+header nav ul li:first-of-type {
+    border-left: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    background: #3d3d3d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.prog {
+    margin-top: 17px;
+    height: 5px;
+    background: #3d3d3d;
+}
+
+.selected {
+    background: rgb(0, 216, 254);
+    transition: all 1s;
+}
+
+
+/* Sections + content + imgs */
 
 .flex-container {
     display: flex;
@@ -29,10 +107,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(141, 128, 114);
     /* background-color: #92a8be; */
     flex-direction: row;
     height: 100%;
+    font-size: 30px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .img-container {
@@ -43,10 +133,11 @@ body {
     width: 50%;
 }
 
-p {
+
+/* p {
     max-width: 50%;
     margin: auto;
-}
+} */
 
 .flex-container-footer {
     display: flex;
@@ -54,7 +145,7 @@ p {
     align-items: center;
     background-color: rgb(138, 138, 138);
     border: 1px solid rgb(255, 255, 255);
-    margin: 20px 20px;
+    margin: auto;
     width: 600px;
 }
 
