@@ -125,14 +125,6 @@ img {
     max-width: 100%;
 }
 
-.img-container {
-    width: 50%;
-}
-
-.text-container {
-    width: 50%;
-}
-
 
 /* p {
     max-width: 50%;
@@ -167,4 +159,24 @@ img {
 a {
     text-decoration: none;
     color: black;
+}
+
+
+/* img stuff */
+
+figure {
+    display: block;
+    margin: 0;
+    margin-top: 160px;
+    width: 60vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+figure img {
+    position: absolute;
+    transition: all 3s ease;
 }
