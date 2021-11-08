@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js" defer></script>
+    <script src="smoothscroll.js" defer></script>
     <title>Images Project</title>
 </head>
 
@@ -17,25 +18,25 @@
     <header>
         <h1>Images Project</h1>
         <nav>
-            <!-- <progress value="0" max="100"></progress> -->
             <ul>
-                <li><a href="#first" class="selected">Time 1</a></li>
+                <li><a href="#first" id="sec1" class="selected">2018</a></li>
+                <li>
+                    <div class="prog" id="prog1"> </div>
+                </li>
+                <li><a href="#second" id="sec2" >2019</a></li>
+                <li>
+                    <div class="prog" id="prog2"> </div>
+                </li>
+                <li><a href="#third" id="sec3" >2020</a></li>
+
+                <!-- <li>
+                    <div class="prog"> </div>
+                </li> -->
+                <!-- <li><a href="#fourth">Time 4</a></li>
                 <li>
                     <div class="prog"> </div>
                 </li>
-                <li><a href="#second">Time 2</a></li>
-                <li>
-                    <div class="prog"> </div>
-                </li>
-                <li><a href="#third">Time 3</a></li>
-                <li>
-                    <div class="prog"> </div>
-                </li>
-                <li><a href="#fourth">Time 4</a></li>
-                <li>
-                    <div class="prog"> </div>
-                </li>
-                <li><a href="#fifth">Time 5</a></li>
+                <li><a href="#fifth">Time 5</a></li> -->
             </ul>
 
         </nav>
@@ -44,46 +45,55 @@
         <main>
             <section id="first">
                 <article>
-                    <h1>Section 1</h1>
-                    <p>Entry 1</p>
+                    <h1>2018</h1>
+                    <p>When I was still in high school, I began learning to code in one of the AP classes that was offered at the school I attending. At the time, I was struggling a lot with the class and was failing to grasp some of the topics that were being taught to us. This problem persisted throughout the year and led me to do extremely poorly on the exams for the course.</p>
                 </article>
+                <figure>
+                    <div class="exam">
+                        <div class="img-container">
+                            <img src="Untitled.png" alt="img" id="score"> 
+                        </div>
+                        <p> AP Computer Science A Exam</p>
+                        <img src="scribbles.png" alt="scribble" class="scribble">
+                    </div>
+                </figure>
             </section>
 
             <section id="second">
                 <article>
-                    <h1>Section 2</h1>
-                    <p>Entry 2</p>
+                    <h1>2019</h1>
+                    <p>
+                        A year later, after putting a lot more effort into coding, I was able to understand the concepts I struggled with a lot more. This is code snippet is an example of the type of things I coded while learning to code.
+                    </p>
                 </article>
+                <figure>
+                    <img src="graph.png" alt="" class="">
+                    
+                    <figcaption>
+                        Dijkstra's algorithm: An algorithm that finds the shortest path from a starting point to every other point in a graph.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="code1.png" alt="" class="">
+                </figure>
             </section>
 
             <section id="third">
                 <article>
-                    <h1>Section 3</h1>
-                    <p>Entry 3</p>
+                    <h1>2020</h1>
+                    <p>Last year, I was able to learn a lot in one of my classes about web development. I learned about the structure of online web applications, how user authetnication and authorization works, and how to create API endpoints to do things for a website. This project was the result of some of the things I learned.</p>
                 </article>
+                <figure>
+                    <img src="bank.png" alt="" class="bank">
+                    
+                    <figcaption class="bank-caption">
+                        An online bank system I created using Express, React, NodeJS and MongoDB.
+                    </figcaption>
+                </figure>
             </section>
 
-            <section id="fourth">
-                <article>
-                    <h1>Section 4</h1>
-                    <p>Entry 4</p>
-                </article>
-            </section>
-
-            <section id="fifth">
-                <article>
-                    <h1>Section 5</h1>
-                    <p>Entry 5</p>
-                </article>
-            </section>
         </main>
 
-        <figure>
-            <img src="painting.jpg" alt="" class="">
-            <figcaption>
-
-            </figcaption>
-        </figure>
         <footer class="flex-container-footer">
             <a href="https://validator.w3.org/check?uri=https://rachoi.github.io/des/studio_projects/images_proj/index.html" class="footer-a">HTML</a>
             <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frachoi.github.io%2Fdes%2Flearning_journal%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" class="footer-a">CSS</a>

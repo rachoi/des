@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: #3b3b3b;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -13,6 +13,11 @@ body {
     height: 768px;
     width: 1366px;
     padding: 20px;
+}
+
+main {
+    max-width: 1366px;
+    /* max-height: 100%; */
 }
 
 
@@ -86,20 +91,18 @@ header nav ul li a {
 section {
     height: 58vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 90%;
+    max-width: 90%;
+    margin: 0;
+    margin-left: 150px;
+    margin-bottom: 300px;
+}
+
+#first {
     justify-content: center;
 }
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-
-/* p {
-    max-width: 50%;
-    margin: auto;
-} */
 
 .flex-container-footer {
     display: flex;
@@ -134,7 +137,14 @@ a {
 
 /* img stuff */
 
-figure {
+img {
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+
+
+/* figure {
     display: block;
     margin: 160px 0;
     width: 60vw;
@@ -143,9 +153,86 @@ figure {
     top: 0;
     right: 0;
     overflow: hidden;
-}
+} */
 
-figure img {
+/* figure img {
     position: absolute;
     transition: all 3s ease;
+} */
+
+/* article {
+    margin-left: 150px;
+} */
+
+article p {
+    max-width: 250px;
+}
+
+article p, article h1 {
+    color: white;
+}
+
+article h1 {
+    margin-bottom: 50px;
+    border-bottom: 1px solid white;
+    max-width: 38px;
+}
+
+.exam {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 450px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.exam p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+#score {
+    right: 100px;
+    max-width: 40px;
+    max-height: 65px;
+    margin: 0;
+    border-radius: 50%;
+    /* display: inline-block; */
+    border: 1px solid red;
+    margin-top: 15px;
+    float: right;
+}
+
+.scribble {
+    max-height: 280px;
+}
+
+.bank {
+    max-height: 95%;
+    max-width: 95%;
+    margin-bottom: 10px;
+}
+
+.bank-caption {
+    max-width: 300px;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+figcaption {
+    color: white;
+    margin: auto;
+    max-width: 250px;
 }
