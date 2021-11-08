@@ -128,7 +128,7 @@
             let prog2 = document.getElementById("prog2");
             prog.classList.remove("selected");
             prog2.classList.remove("selected");
-            window.scroll(0, 250);
+            window.scroll(0, 0);
             
         }
     });
