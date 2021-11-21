@@ -1,0 +1,120 @@
+.page {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 244, 244);
+    margin-bottom: 10;
+    /* justify-content: center; */
+}
+
+.menu-container{
+    background-color: navy;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menu li {
+    margin: 18px 0px;
+    padding: 5px;
+    color: white;
+    transition: 1s;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(59, 70, 235);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-header {
+    color: rgb(0, 0, 0);
+    width: 250x;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(226, 222, 222);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+
+article {
+    max-width: 300px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    max-width: 350px;
+}
+
+article ul {
+    list-style-type: square;
+}
+.flex-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(138, 138, 138);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px 20px;
+    width: 600px;
+}
+
+.flex-container-footer a {
+    margin: 10px 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.flex-container-footer a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    transition: all 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
