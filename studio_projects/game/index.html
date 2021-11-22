@@ -11,19 +11,47 @@
 </head>
 
 <body>
-    <h1>Game of PIG</h1>
-    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn.
-        After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
-    <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+    <header class="flex-container">
+        <h1 class="title">Game of PIG</h1>
+        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn.
+            After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
+        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+    </header>
+    
+    <div class="game-container">
+        <section id="hp1" class="hidden">
+            <div id="score1"></div>
+            <div class="hp">
+                <div id="p1"></div>
+            </div>
+        </section>
+        
+        <div class="game-content"> 
+            <div id="gamecontrol">
+                <h2>Click the button to randomly choose a player to start the game</h2>
+                <button id="startgame">Start the Game</button>
+            </div>
+        
+            <div id="game"></div>
+            <div id="actions"></div>
+            <div id="score"></div>
+        </div>
+        <section id="hp2" class="hidden">
+            <div id="score2"></div>
+            <div class="hp">
+                <div id="p2"></div>
+            </div>
+        </section>
+        
 
-    <div id="gamecontrol">
-        <h2>Start a Game</h2>
-        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
     </div>
-
-    <div id="game"></div>
-    <div id="actions"></div>
-    <div id="score"></div>
+    
+    
+    <footer class="flex-container-footer">
+        <a href="https://validator.w3.org/check?uri=https://rachoi.github.io/des/studio_projects/game/index.html" class="footer-a">HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://rachoi.github.io/des/studio_projects/game/index.html" class="footer-a">CSS</a>
+        <a href="mailto:&#114;&#099;&#104;&#111;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" class="footer-a">Email</a>
+    </footer>
 
 
 </body>
