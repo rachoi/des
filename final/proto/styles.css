@@ -1,0 +1,30 @@
+.menu-container {
+    background-color: navy;
+    /* temp */
+    max-width: 120px;
+    height: 768px;
+}
+
+.menu {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menu li {
+    margin: 18px 0px;
+    padding: 5px;
+    color: white;
+    transition: 1s;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(59, 70, 235);
+}
