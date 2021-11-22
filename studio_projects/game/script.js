@@ -52,6 +52,21 @@
 
         setUpTurn();
 
+        function updateScore() {
+            if(gameData.index === 0) {
+                p1.style.height = `${20 * gameData.score[gameData.index]}px`;
+                console.log(p1);
+                console.log("updated score for p1");
+            }
+            else{
+                p2.style.height = `${20 * gameData.score[gameData.index]}px`;
+                console.log(p2);
+                console.log("updated score for p1");
+
+            }
+            
+        }
+
         function throwDice() {
             dice.play();
             actionArea.innerHTML = '';
@@ -68,12 +83,14 @@
                 game.innerHTML += '<p class="prompt"> Oh snap! Snake eyes! </p>';
                 gameData.score[gameData.index] = 0;
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+                updateScore();
                 setTimeout(setUpTurn, 2000);
             } else if (gameData.roll === 1 || gameData.roll2 === 1) {
                 console.log("one of the two dice was a 1");
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 game.innerHTML += `<p class="prompt"> Sorry, one of your rolls was a one switching to ${gameData.players[gameData.index]}</p>`;
                 setTimeout(setUpTurn, 2000);
+                updateScore();
             } else {
                 console.log("The game proceeds");
                 gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
@@ -87,21 +104,6 @@
                     gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                     setUpTurn();
                 });
-
-                function updateScore() {
-                    if(gameData.index === 0) {
-                        p1.style.height = `${20 * gameData.score[gameData.index]}px`;
-                        console.log(p1);
-                        console.log("updated score for p1");
-                    }
-                    else{
-                        p2.style.height = `${20 * gameData.score[gameData.index]}px`;
-                        console.log(p2);
-                        console.log("updated score for p1");
-
-                    }
-                    
-                }
 
                 updateScore();
 
