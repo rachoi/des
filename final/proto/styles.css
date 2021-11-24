@@ -48,7 +48,7 @@ body {
     /* overflow: hidden; */
     /* temp */
     max-width: 120px;
-    height: 768px;
+    height: 100%;
 }
 
 .prog {
@@ -121,11 +121,11 @@ main {
 
 
 section {
-    height: 58vh;
+    min-height: 58vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-height: 90%;
+    /* max-height: 90%; */
     max-width: 90%;
     margin: 0;
     margin-left: 150px;
@@ -137,7 +137,11 @@ section {
 
 article p, article h1{
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 28px;
+}
+
+article p {
+    max-height: 100%;
 }
 
 #first {
@@ -158,7 +162,7 @@ article p, article h1{
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .flex-container-footer a:hover {
@@ -224,7 +228,7 @@ article h1 {
 }
 
 .exam p {
-    font-size: 12px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
 }
@@ -271,7 +275,7 @@ figure {
 figcaption {
     color: white;
     margin: auto;
-    font-size: 20px;
+    font-size: 25px;
     max-width: 250px;
 }
 
