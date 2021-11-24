@@ -202,7 +202,8 @@ article h1 {
 }
 
 .exam p {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
 }
