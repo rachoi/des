@@ -31,20 +31,6 @@ body {
     flex-direction: row;
 }
 
-.left h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    color: white;
-    transition: 1s;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
-    margin: auto;
-    padding: 0;
-}
-
 .circle {
     margin: auto 0;
     content: '';
@@ -53,10 +39,6 @@ body {
     background-color: yellow;
     border: 2px solid white;
     border-radius: 50%;
-}
-
-#sec1 {
-    /* margin-top: 50px; */
 }
 
 .menu-container {
@@ -104,7 +86,7 @@ body {
     height: 50px;
 }
 
-li:hover {
+#sec1:hover, #sec2:hover, #sec3:hover {
     cursor: pointer;
     /* background-color: #2B2B2B; */
     /* background-color: #1C1C1C; */
@@ -113,9 +95,13 @@ li:hover {
     border-right: 2px yellow solid;
 }
 
-li label{
-    max-width: 47px;
+li label {
     font-size: 30px;
+}
+
+li label:hover{
+    cursor: pointer;
+    max-width: 47px;
 }
 
 .page {
