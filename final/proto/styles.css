@@ -97,11 +97,11 @@ body {
 
 li label {
     font-size: 30px;
+    max-width: 47px;
 }
 
 li label:hover{
     cursor: pointer;
-    max-width: 47px;
 }
 
 .page {
@@ -141,7 +141,9 @@ article p, article h1{
 }
 
 article p {
+    color: white;
     max-height: 100%;
+    max-width: 350px;
 }
 
 #first {
@@ -183,37 +185,9 @@ img {
     margin: auto;
 }
 
-
-/* figure {
-    display: block;
-    margin: 160px 0;
-    width: 60vw;
-    height: 70%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-} */
-
-/* figure img {
-    position: absolute;
-    transition: all 3s ease;
-} */
-
-/* article {
-    margin-left: 150px;
-} */
-
-article p {
-    max-width: 250px;
-}
-
-article p, article h1 {
-    color: white;
-}
-
 article h1 {
     margin-bottom: 50px;
+    color: white;
     border-bottom: 1px solid white;
     max-width: 38px;
 }
