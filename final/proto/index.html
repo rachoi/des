@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="smoothscroll.js" defer></script>
     <title>Images Project</title>
 </head>
 
@@ -18,23 +20,33 @@
     </header>
     <nav class="menu-container"> 
         <ul class="menu">
-            <li id="sec1" class="selected">
-                <div class="circle"></div>
-                <label> 2018 </label>
+            <li>
+                <a href="#first"id="sec1">
+                    <div class="circle"></div>
+                    <label href="#first" class="selected" id="lab1"> 2018 </label>
+                </a>
             </li>
             <li>
-                <div id="prog1" class="prog"></div>
-            </li>
-            <li id="sec2">
-                <div class="circle"></div>
-                <label> 2019 </label>
+                <div id="prog1" class="prog">
+                    <div id="p1"></div>
+                </div>
             </li>
             <li>
-                <div class="prog" id="prog2"> </div>
+                <a href="#second" id="sec2">
+                    <div class="circle"></div>
+                    <label href="#second" id="lab2"> 2019</label>
+                </a>
             </li>
-            <li id="sec3">
-                <div class="circle"></div>
-                <label> 2020 </label>
+            <li>
+                <div class="prog" id="prog2"> 
+                    <div id="p2"></div>
+                </div>
+            </li>
+            <li>
+                <a href="#third" id="sec3">
+                    <div class="circle"></div>
+                    <label href="#third" id="lab3"> 2020</label>
+                </a>
             </li>
         </ul>
     </nav>

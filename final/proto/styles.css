@@ -58,8 +58,24 @@ body {
     /* height: 100px; */ 
 
     /* jc evenly */
-    min-height: 240px;
+    min-height: 250px;
     background-color: white;
+    padding: 0;
+}
+/* sec 503, bar 240 */
+#p1, #p2 {
+    bottom: 0;
+    background-color: yellow;
+    width: 3px;
+    max-height: 250px;
+    height: 0px; 
+    /* every 20 px is 1 point */
+    margin: 0;
+    padding: 0;
+    transition: 0.1s;
+}
+.selected {
+    color: yellow;
 }
 
 .menu {
@@ -79,18 +95,30 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin: 0px;
-    /* margin-right: 10px; */
-    padding: 5px;
     color: white;
     transition: 1s;
     height: 50px;
 }
+
+.menu li a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    color: white;
+    padding: 5px;
+    transition: 1s;
+    width: 100%;
+
+}
+
 
 #sec1:hover, #sec2:hover, #sec3:hover {
     cursor: pointer;
     /* background-color: #2B2B2B; */
     /* background-color: #1C1C1C; */
     /* border: 1px white solid; */
+    transition: 0s;
     color: yellow;
     border-right: 2px yellow solid;
 }
