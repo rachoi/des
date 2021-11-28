@@ -61,15 +61,15 @@
         let l3 = document.getElementById("lab3");
 
 
-        if(realpos >= 0 && realpos < 500) {
+        if(realpos >= 0 && realpos < 515) {
             p1.style.height = `${realpos/2}px`;
             p2.style.height = `0px`;
             l2.style.color = "white";
             l3.style.color = "white";
         }
-        else if(realpos >= 500) {
+        else if(realpos >= 515) {
             p1.style.height = `250px`;
-            p2.style.height = `${(realpos-444)/2}px`;
+            p2.style.height = `${(realpos-432)/2}px`;
             l2.style.color = "yellow";
             if(realpos >= 950) {
                 l3.style.color = "yellow";
@@ -103,7 +103,7 @@
             }
             else if(realpos > 515) {
                 p1.style.height = `250px`;
-                p2.style.height = `${(realpos-444)/2}px`;
+                p2.style.height = `${(realpos-432)/2}px`;
                 l2.style.color = "yellow";
                 if(realpos >= 950) {
                     l3.style.color = "yellow";

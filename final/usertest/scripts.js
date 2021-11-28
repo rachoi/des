@@ -42,7 +42,6 @@
     }
 
     window.addEventListener('load', function() {
-        alert('Hello, thank you for taking the time to test my project! The main thing to test for is the navigation bar on the left. The three things to look out for are the following: 1) When clicking the year, it will take you to the section for that year. 2) The progress bar should show yellow as you progress to each section and/or go down when you go backwards. 3) When you reload the page, it should stay at where you were, and the bar should match the corresponding location.');
         const posts = document.querySelectorAll('section');
         let postTops = [];
         let pagetop;
@@ -62,15 +61,15 @@
         let l3 = document.getElementById("lab3");
 
 
-        if(realpos >= 0 && realpos < 500) {
+        if(realpos >= 0 && realpos < 515) {
             p1.style.height = `${realpos/2}px`;
             p2.style.height = `0px`;
             l2.style.color = "white";
             l3.style.color = "white";
         }
-        else if(realpos >= 500) {
+        else if(realpos >= 515) {
             p1.style.height = `250px`;
-            p2.style.height = `${(realpos-444)/2}px`;
+            p2.style.height = `${(realpos-432)/2}px`;
             l2.style.color = "yellow";
             if(realpos >= 950) {
                 l3.style.color = "yellow";
@@ -104,7 +103,7 @@
             }
             else if(realpos > 515) {
                 p1.style.height = `250px`;
-                p2.style.height = `${(realpos-444)/2}px`;
+                p2.style.height = `${(realpos-432)/2}px`;
                 l2.style.color = "yellow";
                 if(realpos >= 950) {
                     l3.style.color = "yellow";
