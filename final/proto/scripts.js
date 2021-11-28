@@ -69,7 +69,13 @@
         }
         else if(realpos >= 515) {
             p1.style.height = `250px`;
-            p2.style.height = `${(realpos-432)/2}px`;
+            if(realpos == 0) {
+                p2.style.height = `0px`;
+            }
+            else{
+                p2.style.height = `${(realpos-432)/2}px`;
+            }
+            
             l2.style.color = "yellow";
             if(realpos >= 950) {
                 l3.style.color = "yellow";
@@ -103,7 +109,12 @@
             }
             else if(realpos > 515) {
                 p1.style.height = `250px`;
-                p2.style.height = `${(realpos-432)/2}px`;
+                if(realpos == 0) {
+                    p2.style.height = `0px`;
+                }
+                else{
+                    p2.style.height = `${(realpos-432)/2}px`;
+                }
                 l2.style.color = "yellow";
                 if(realpos >= 950) {
                     l3.style.color = "yellow";
