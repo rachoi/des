@@ -61,15 +61,15 @@
         let l3 = document.getElementById("lab3");
 
 
-        if(realpos >= 0 && realpos < 515) {
+        if(realpos >= 0 && realpos < 560) {
             p1.style.height = `${realpos/2}px`;
             p2.style.height = `0px`;
             l2.style.color = "white";
             l3.style.color = "white";
         }
-        else if(realpos >= 515) {
+        else if(realpos >= 560) {
             p1.style.height = `250px`;
-            if(realpos == 0) {
+            if(realpos == 560) {
                 p2.style.height = `0px`;
             }
             else{
@@ -101,29 +101,27 @@
             let realpos = pagetop - 250;
             // console.log(`real pos: ${realpos}`)
 
-            if(realpos >= 0 && realpos < 515) {
+            if(realpos >= 0 && realpos < 560) {
                 p1.style.height = `${realpos/2}px`;
                 p2.style.height = `0px`;
                 l2.style.color = "white";
                 l3.style.color = "white";
             }
-            else if(realpos > 515) {
+            else if(realpos >= 560) {
                 p1.style.height = `250px`;
-                if(realpos == 0) {
+                if(realpos == 560) {
                     p2.style.height = `0px`;
                 }
                 else{
                     p2.style.height = `${(realpos-432)/2}px`;
                 }
+                
                 l2.style.color = "yellow";
                 if(realpos >= 950) {
                     l3.style.color = "yellow";
                 }
-                else{
-                    l3.style.color = "white";
-                }
-                
             }
+            
 
 
 
