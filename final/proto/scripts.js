@@ -28,7 +28,6 @@
         console.log(id);
     
         let cur = window.pageYOffset;
-        // console.log("cur pos :" + cur);
         let originalTop;
         if(id === "lab1") {
             originalTop = 0 - cur;
@@ -38,9 +37,7 @@
                 originalTop = border1 - cur;
             }
             else{
-                // console.log("B1: " + border1);
-                // console.log(cur);
-                originalTop = Math.abs(border1 - cur);
+                originalTop = header + Math.abs(border1 - cur);
             }
             
         }
@@ -61,13 +58,13 @@
         let pagetop;
         let counter = 1;
         let prevCounter = 1;
-        pagetop = window.pageYOffset + 200;
+        pagetop = window.pageYOffset + header;
 
 
         let p1 = document.getElementById('p1');
         let p2 = document.getElementById('p2');
 
-        let realpos = pagetop - 250;
+        let realpos = pagetop - header;
         console.log(`real pos load ${realpos}`);
 
         if(realpos >= 0 && realpos < border1) {
@@ -82,12 +79,15 @@
                 p2.style.height = `0px`;
             }
             else{
-                p2.style.height = `${(realpos-432)/2}px`;
+                p2.style.height = `${(realpos-border1)/2}px`;
             }
             
             l2.style.color = "yellow";
             if(realpos >= border1+border2) {
                 l3.style.color = "yellow";
+            }
+            else{
+                l3.style.color = "white";
             }
         }
         
@@ -122,51 +122,54 @@
                     p2.style.height = `0px`;
                 }
                 else{
-                    p2.style.height = `${(realpos-432)/2}px`;
+                    p2.style.height = `${(realpos-border1)/2}px`;
                 }
                 
                 l2.style.color = "yellow";
                 if(realpos >= border1+border2) {
                     l3.style.color = "yellow";
                 }
+                else{
+                    l3.style.color = "white";
+                }
             }
 
 
             // const thisLink = document.querySelector(`nav ul li:nth-child(${counter}) a`);
-            let thisLink;
-            let prog;
-            if(counter == 1) {
-                thisLink = document.getElementById("first");
-            }
-            else if(counter == 2) {
-                thisLink = document.getElementById("second");
-                prog = document.getElementById("sec1");
-            }
-            else if(counter == 3) {
-                thisLink = document.getElementById("third");
-                prog = document.getElementById("sec2");
-            }
+            // let thisLink;
+            // let prog;
+            // if(counter == 1) {
+            //     thisLink = document.getElementById("first");
+            // }
+            // else if(counter == 2) {
+            //     thisLink = document.getElementById("second");
+            //     prog = document.getElementById("sec1");
+            // }
+            // else if(counter == 3) {
+            //     thisLink = document.getElementById("third");
+            //     prog = document.getElementById("sec2");
+            // }
 
-            if(prevCounter > counter) {
-                if(counter == 1) {
-                    thisLink = document.getElementById("second");
-                    prog = document.getElementById("prog1");
-                }
-                else if(counter == 2) {
-                    thisLink = document.getElementById("third");
-                    prog = document.getElementById("prog2");
-                }
-                thisLink.removeAttribute('class');
-                prog.classList.remove('selected');
-            }
-            else{
-                if(counter >= 2) {
-                    thisLink.className = 'selected';
-                    prog.classList.add('selected');
-                }
-            }
+            // if(prevCounter > counter) {
+            //     if(counter == 1) {
+            //         thisLink = document.getElementById("second");
+            //         prog = document.getElementById("prog1");
+            //     }
+            //     else if(counter == 2) {
+            //         thisLink = document.getElementById("third");
+            //         prog = document.getElementById("prog2");
+            //     }
+            //     thisLink.removeAttribute('class');
+            //     prog.classList.remove('selected');
+            // }
+            // else{
+            //     if(counter >= 2) {
+            //         thisLink.className = 'selected';
+            //         prog.classList.add('selected');
+            //     }
+            // }
             
-            prevCounter = counter;
+            // prevCounter = counter;
         });
 
         
