@@ -1,7 +1,7 @@
 (function() {
     "use strict";
     console.log("reading js");
-
+    alert('Hello, thank you for testing my project! The tests you will be conducting are focused on the progress bar on the left. Here are the three things to check for: 1) Clicking on the year will take you to the appropriate year and adjust the bar accordingly. 2) Progress bar should be adjusted (always) according to the sections we are looking at. 3) Years/sections we have passed should remain yellow, years we have not passed should not be yellow (should change as you scroll back and forth)');
     const navLinks = document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(function(eachLink) {
@@ -134,42 +134,6 @@
                 }
             }
 
-
-            // const thisLink = document.querySelector(`nav ul li:nth-child(${counter}) a`);
-            // let thisLink;
-            // let prog;
-            // if(counter == 1) {
-            //     thisLink = document.getElementById("first");
-            // }
-            // else if(counter == 2) {
-            //     thisLink = document.getElementById("second");
-            //     prog = document.getElementById("sec1");
-            // }
-            // else if(counter == 3) {
-            //     thisLink = document.getElementById("third");
-            //     prog = document.getElementById("sec2");
-            // }
-
-            // if(prevCounter > counter) {
-            //     if(counter == 1) {
-            //         thisLink = document.getElementById("second");
-            //         prog = document.getElementById("prog1");
-            //     }
-            //     else if(counter == 2) {
-            //         thisLink = document.getElementById("third");
-            //         prog = document.getElementById("prog2");
-            //     }
-            //     thisLink.removeAttribute('class');
-            //     prog.classList.remove('selected');
-            // }
-            // else{
-            //     if(counter >= 2) {
-            //         thisLink.className = 'selected';
-            //         prog.classList.add('selected');
-            //     }
-            // }
-            
-            // prevCounter = counter;
         });
 
         
