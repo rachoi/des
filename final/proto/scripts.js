@@ -37,7 +37,7 @@
                 originalTop = border1 - cur;
             }
             else{
-                originalTop = header + Math.abs(border1 - cur);
+                originalTop = Math.abs(border1 - cur);
             }
             
         }
