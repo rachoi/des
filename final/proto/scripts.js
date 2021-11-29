@@ -8,37 +8,51 @@
         eachLink.addEventListener('click', smoothScroll);
     });
 
+    let l1 = document.getElementById("lab1");
+    let l2 = document.getElementById("lab2");
+    let l3 = document.getElementById("lab3");
+    
+    let header = document.getElementById("head").getBoundingClientRect().height;
+    let border1 = document.getElementById("first").getBoundingClientRect().height-header;
+    let border2 = document.getElementById("second").getBoundingClientRect().height-header;
+
+    console.log("our borders:");
+    console.log(header);
+    console.log(border1);
+    console.log(border2);
+        
+
     function smoothScroll(e) {
         e.preventDefault();
         let id = e.target.id;
         console.log(id);
-        const targetId = e.target.getAttribute('href');
-        const targetAnchor = document.querySelector(targetId);
-        let originalTop = (targetAnchor.getBoundingClientRect().top);
-        console.log(`before ${originalTop}`);
+    
+        let cur = window.pageYOffset;
+        // console.log("cur pos :" + cur);
+        let originalTop;
         if(id === "lab1") {
-            originalTop -= 200;
+            originalTop = 0 - cur;
         }
         else if(id === "lab2") {
-            originalTop -= 90;
+            if(cur > border1) {
+                originalTop = border1 - cur;
+            }
+            else{
+                // console.log("B1: " + border1);
+                // console.log(cur);
+                originalTop = Math.abs(border1 - cur);
+            }
+            
         }
         else if(id === "lab3") {
-            originalTop -= 90;
+            originalTop = header + border1 + border2 - cur;
         }
+        console.log("org " + originalTop);
         window.scrollBy({
             top: originalTop,
             left: 0,
             behavior: 'smooth'
         });
-        // console.log(originalTop);
-        // let originalTop;
-        
-        // window.scrollBy({
-        //     top: originalTop,
-        //     left: 0,
-        //     behavior: 'smooth'
-        // });
-        console.log(originalTop);
     }
 
     window.addEventListener('load', function() {
@@ -47,7 +61,7 @@
         let pagetop;
         let counter = 1;
         let prevCounter = 1;
-        pagetop = window.pageYOffset + 250;
+        pagetop = window.pageYOffset + 200;
 
 
         let p1 = document.getElementById('p1');
@@ -55,21 +69,16 @@
 
         let realpos = pagetop - 250;
         console.log(`real pos load ${realpos}`);
-        
-        let l1 = document.getElementById("lab1");
-        let l2 = document.getElementById("lab2");
-        let l3 = document.getElementById("lab3");
 
-
-        if(realpos >= 0 && realpos < 560) {
+        if(realpos >= 0 && realpos < border1) {
             p1.style.height = `${realpos/2}px`;
             p2.style.height = `0px`;
             l2.style.color = "white";
             l3.style.color = "white";
         }
-        else if(realpos >= 560) {
+        else if(realpos >= border1) {
             p1.style.height = `250px`;
-            if(realpos == 560) {
+            if(realpos == border1) {
                 p2.style.height = `0px`;
             }
             else{
@@ -77,7 +86,7 @@
             }
             
             l2.style.color = "yellow";
-            if(realpos >= 950) {
+            if(realpos >= border1+border2) {
                 l3.style.color = "yellow";
             }
         }
@@ -101,15 +110,15 @@
             let realpos = pagetop - 250;
             // console.log(`real pos: ${realpos}`)
 
-            if(realpos >= 0 && realpos < 560) {
+            if(realpos >= 0 && realpos < border1) {
                 p1.style.height = `${realpos/2}px`;
                 p2.style.height = `0px`;
                 l2.style.color = "white";
                 l3.style.color = "white";
             }
-            else if(realpos >= 560) {
+            else if(realpos >= border1) {
                 p1.style.height = `250px`;
-                if(realpos == 560) {
+                if(realpos == border1) {
                     p2.style.height = `0px`;
                 }
                 else{
@@ -117,12 +126,10 @@
                 }
                 
                 l2.style.color = "yellow";
-                if(realpos >= 950) {
+                if(realpos >= border1+border2) {
                     l3.style.color = "yellow";
                 }
             }
-            
-
 
 
             // const thisLink = document.querySelector(`nav ul li:nth-child(${counter}) a`);
