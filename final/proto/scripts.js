@@ -148,7 +148,7 @@
                 }
                 
                 l2.style.color = "yellow";
-                if(realpos >= border1+border2) {
+                if(realpos >= header + border1+border2) {
                     l3.style.color = "yellow";
                     c2.style.backgroundColor = "yellow";
                     c2.style.border = "2px yellow solid";
