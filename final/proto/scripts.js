@@ -122,7 +122,8 @@
             }
 
             let realpos = pagetop - 250;
-            // console.log(`real pos: ${realpos}`)
+            console.log(`real pos: ${realpos}`);
+            console.log(border1 + border2);
 
             if(realpos >= 0 && realpos < border1) {
                 p1.style.height = `${realpos/2}px`;
