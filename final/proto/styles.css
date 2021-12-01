@@ -49,6 +49,7 @@ body {
     /* temp */
     max-width: 120px;
     height: 100%;
+    padding: 10px;
 }
 
 .prog {
@@ -162,6 +163,10 @@ section {
     background-color: #161616;
 }
 
+.spec {
+    align-items: flex-start;
+}
+
 
 article p, article h1{
     margin-left: 10px;
@@ -171,11 +176,12 @@ article p, article h1{
 article p {
     color: white;
     max-height: 100%;
-    max-width: 350px;
+    max-width: 600px;
 }
 
 #first {
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 .flex-container-footer {
@@ -217,15 +223,15 @@ article h1 {
     margin-bottom: 50px;
     color: white;
     border-bottom: 1px solid white;
-    max-width: 38px;
+    max-width: 45px;
 }
 
 .exam {
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 450px;
-    width: 350px;
+    height: 550px;
+    width: 450px;
     margin-bottom: 15px;
 }
 
@@ -259,8 +265,8 @@ article h1 {
 }
 
 .bank {
-    max-height: 95%;
-    max-width: 95%;
+    max-height: 75%;
+    max-width: 75%;
     margin-bottom: 10px;
 }
 

@@ -49,6 +49,7 @@ body {
     /* temp */
     max-width: 120px;
     height: 100%;
+    margin: 0px 20px;
 }
 
 .prog {
