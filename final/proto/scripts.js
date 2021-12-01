@@ -154,8 +154,6 @@
                     c2.style.border = "2px yellow solid";
                 }
                 else{
-                    console.log("error");
-                    console.log("d " + realpos + "d " + border1+border2);
                     l3.style.color = "white";
                     c2.style.backgroundColor = "white";
                     c2.style.border = "2px white solid";
