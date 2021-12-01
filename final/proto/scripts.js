@@ -16,6 +16,9 @@
     let border1 = document.getElementById("first").getBoundingClientRect().height-header;
     let border2 = document.getElementById("second").getBoundingClientRect().height-header;
 
+    let c1 = document.getElementById("c1");
+    let c2 = document.getElementById("c2");
+
     console.log("our borders:");
     console.log(header);
     console.log(border1);
@@ -72,22 +75,33 @@
             p2.style.height = `0px`;
             l2.style.color = "white";
             l3.style.color = "white";
+            c1.style.border = "2px white solid";
+            c1.style.backgroundColor = "white";
+            c2.style.backgroundColor = "white";
+            c2.style.border = "2px white solid";
         }
         else if(realpos >= border1) {
             p1.style.height = `250px`;
+            c1.style.border = "2px yellow solid";
+            c1.style.backgroundColor = "yellow";
+
             if(realpos == border1) {
                 p2.style.height = `0px`;
             }
             else{
-                p2.style.height = `${(realpos-border1)/2}px`;
+                p2.style.height = `${(realpos-border1)}px`;
             }
             
             l2.style.color = "yellow";
             if(realpos >= border1+border2) {
                 l3.style.color = "yellow";
+                c2.style.backgroundColor = "yellow";
+                c2.style.border = "2px yellow solid";
             }
             else{
                 l3.style.color = "white";
+                c2.style.backgroundColor = "white";
+                c2.style.border = "2px white solid";
             }
         }
         
@@ -115,24 +129,36 @@
                 p2.style.height = `0px`;
                 l2.style.color = "white";
                 l3.style.color = "white";
+                c1.style.border = "2px white solid";
+                c1.style.backgroundColor = "white";
+                c2.style.backgroundColor = "white";
+                c2.style.border = "2px white solid";
             }
             else if(realpos >= border1) {
                 p1.style.height = `250px`;
+                c1.style.border = "2px yellow solid";
+                c1.style.backgroundColor = "yellow";
+    
                 if(realpos == border1) {
                     p2.style.height = `0px`;
                 }
                 else{
-                    p2.style.height = `${(realpos-border1)/2}px`;
+                    p2.style.height = `${(realpos-border1)}px`;
                 }
                 
                 l2.style.color = "yellow";
                 if(realpos >= border1+border2) {
                     l3.style.color = "yellow";
+                    c2.style.backgroundColor = "yellow";
+                    c2.style.border = "2px yellow solid";
                 }
                 else{
                     l3.style.color = "white";
+                    c2.style.backgroundColor = "white";
+                    c2.style.border = "2px white solid";
                 }
             }
+           
 
 
             // const thisLink = document.querySelector(`nav ul li:nth-child(${counter}) a`);
