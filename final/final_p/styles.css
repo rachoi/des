@@ -125,7 +125,6 @@ body {
     transition: 0s;
     color: yellow;
     border-right: 2px yellow solid;
-    padding: 10px;
 }
 
 li label {
